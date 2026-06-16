@@ -1,16 +1,11 @@
 ﻿using HRM.Areas.Identity.Data;
-using HRM.Models.hrms;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using Microsoft.AspNetCore.SignalR;
-using System;
 using HRM.Hub;
 using Microsoft.AspNetCore.Authorization;
-using System.Text;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace HRM.Controllers
@@ -194,7 +189,7 @@ namespace HRM.Controllers
 		public IActionResult DailyAttDetail() 
 		{
 			var tempAtt = _context.tempMonthAtts.Include(c => c.emp).Include(c => c.emp.depart)
-				.Where(c => c.date.Date == _timeService.GetCurrentTimeInPakistan().Date)
+				.Where(c => c.date.Date == _timeService.GetCurrentTimeInIndia().Date)
 				.OrderBy(c => c.emp.companyId).ThenBy(c => c.emp.departId).ThenBy(c => c.emp.joining_date)
 				.ToList();
 
@@ -437,7 +432,7 @@ namespace HRM.Controllers
 
 			ViewBag.empRawAtt = empRawAtt;
 			
-			DateTime currentDateTime = _timeService.GetCurrentTimeInPakistan();
+			DateTime currentDateTime = _timeService.GetCurrentTimeInIndia();
 			var emp_Attend = _context.empAttendViewModels.FromSqlRaw("EXEC emp_attend @empId = '" + empId + "'").ToList();
 			TimeSpan todayin = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkin).FirstOrDefault();
 			TimeSpan todayout = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkout).FirstOrDefault();			
@@ -659,7 +654,7 @@ namespace HRM.Controllers
 				ViewBag.remainhour = 100;
 			}
 
-			/*ViewBag.pkrtime = _timeService.GetCurrentTimeInPakistan().ToString("MM/dd/yyyy HH:mm:ss");
+			/*ViewBag.pkrtime = _timeService.GetCurrentTimeInIndia().ToString("MM/dd/yyyy HH:mm:ss");
 			
 			var empRawAttquery = _context.rawattendances
 	        .Where(r => r.empId == empId)
@@ -695,7 +690,7 @@ namespace HRM.Controllers
 			else if(todaycheckin != null && todaycheckout == null)
 			{
 				ViewBag.todaycheckin = todaycheckin.att_datetime.ToString("ddd, dd MMM yyyy hh:mm tt");
-				TimeSpan todayduration = _timeService.GetCurrentTimeInPakistan() - todaycheckin.att_datetime;
+				TimeSpan todayduration = _timeService.GetCurrentTimeInIndia() - todaycheckin.att_datetime;
                 ViewBag.todaytime = todayduration.Hours + ":" + todayduration.Minutes;
 				double todaypercentage = ((double)todayduration.Hours / 9) * 100;
 				todayintValue = (int)todaypercentage;				
@@ -747,7 +742,7 @@ namespace HRM.Controllers
 				ViewBag.todayhour = 100;
 			}
 
-			DateTime today = _timeService.GetCurrentTimeInPakistan();
+			DateTime today = _timeService.GetCurrentTimeInIndia();
 			int daysUntilMonday = ((int)today.DayOfWeek - (int)DayOfWeek.Monday + 7) % 7;
 			DateTime startOfWeek = today.AddDays(-daysUntilMonday);
 			DateTime endOfWeek = startOfWeek.AddDays(5); // Calculate the end of the current week

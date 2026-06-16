@@ -1,9 +1,9 @@
 ﻿using HRM.Areas.Identity.Data;
 using HRM.Hub;
 using HRM.Models.hrms;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.CodeAnalysis;
 
 namespace HRM.Controllers

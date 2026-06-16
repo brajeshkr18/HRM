@@ -1,7 +1,7 @@
 ﻿namespace HRM.Models.hrms
 {
-	public class GetPakTime
-	{
+	public class GetIndiaTime
+    {
 		public DateTime CurrentTimeInPST { get; set; }
 	}
 }

@@ -1,5 +1,4 @@
 ﻿using HRM.Areas.Identity.Data;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace HRM.Models.hrms

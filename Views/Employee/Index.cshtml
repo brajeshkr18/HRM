@@ -82,7 +82,7 @@
                     @foreach (var user in Model)
                     {
                         <tr>
-                           @*  <td>
+                            <td>
                                 <h2 class="table-avatar">
                                     <a asp-controller="Employee" asp-action="Profile" asp-route-id="@user.Id" class="avatar"><img src="~/dist/files/@user.profile_pic" alt="User Image"></a>
                                     <a asp-controller ="Employee" asp-action="Profile" asp-route-id="@user.Id">@user.name - <span> @(user.designation?.name ?? "")</span></a>
@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                             </td>
-                            } 
+                            }   
                             <!-- Add more user property cells as needed -->
                             <td>@user.Email</td>
                             <td>@user.bank</td>
@@ -129,7 +129,7 @@
                             <td>@user.designation.name</td>
                             <td>@(user.shift != null ? $"{user.shift.from} - {user.shift.to}" : "")</td>
                             <td>@user.attend_type</td>
-                            <td>@user.machineId</td> *@
+                            <td>@user.machineId</td>
 
                         </tr>
                     }

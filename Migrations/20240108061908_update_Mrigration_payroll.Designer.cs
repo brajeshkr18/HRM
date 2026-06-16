@@ -693,14 +693,14 @@ namespace HRM.Migrations
                     b.ToTable("gazettedHolidays");
                 });
 
-            modelBuilder.Entity("HRM.Models.hrms.GetPakTime", b =>
+            modelBuilder.Entity("HRM.Models.hrms.GetIndiaTime", b =>
                 {
                     b.Property<DateTime>("CurrentTimeInPST")
                         .HasColumnType("datetime2");
 
                     b.ToTable((string)null);
 
-                    b.ToView("GetPakTimeView", (string)null);
+                    b.ToView("GetIndiaTimeView", (string)null);
                 });
 
             modelBuilder.Entity("HRM.Models.hrms.LeaveApplyModel", b =>

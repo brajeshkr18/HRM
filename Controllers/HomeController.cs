@@ -1,12 +1,10 @@
 ﻿using HRM.Areas.Identity.Data;
 using HRM.Models;
-using HRM.Models.hrms;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace HRM.Controllers
 {
@@ -34,7 +32,7 @@ namespace HRM.Controllers
 		}
 	public IActionResult GetCurrentTimeInPST()
 		{
-			var currentTimeInPST = _timeService.GetCurrentTimeInPakistan();
+			var currentTimeInPST = _timeService.GetCurrentTimeInIndia();
 
 			// Format the time as needed
 			ViewBag.CurrentTimeInPST = currentTimeInPST.ToString("dd/MM/yyyy HH:mm:ss");
@@ -138,7 +136,7 @@ namespace HRM.Controllers
 
 			ViewBag.empRawAtt = empRawAtt;
 
-			DateTime currentDateTime = _timeService.GetCurrentTimeInPakistan();
+			DateTime currentDateTime = _timeService.GetCurrentTimeInIndia();
 			var emp_Attend = _context.empAttendViewModels.FromSqlRaw("EXEC emp_attend @empId = '" + empId + "'").ToList();
 			TimeSpan todayin = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkin).FirstOrDefault();
 			TimeSpan todayout = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkout).FirstOrDefault();

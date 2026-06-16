@@ -45,7 +45,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<LeaveCountViewModel> leaveCountViewModels { get; set; }
     public DbSet<LoanViewModel> loanViewModels { get; set; }
 	public DbSet<empAttendViewModel> empAttendViewModels { get; set; }
-    public DbSet<GetPakTime> getPakTime { get; set; }
+    public DbSet<GetIndiaTime> getIndTime { get; set; }
 
 	protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -62,8 +62,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         builder.Entity<LeaveCountViewModel>().ToView("LeaveCountView");
         builder.Entity<LoanViewModel>().ToView("LoanView");
 		builder.Entity<empAttendViewModel>().ToView("empAttendView");
-		builder.Entity<GetPakTime>().ToView("GetPakTimeView");
-		builder.Entity<GetPakTime>().HasNoKey();
+		builder.Entity<GetIndiaTime>().ToView("GetPakTimeView");
+		builder.Entity<GetIndiaTime>().HasNoKey();
 		builder.Entity<EOBIModel>()
        .HasOne(e => e.fy)
        .WithMany()
