@@ -433,7 +433,7 @@ namespace HRM.Controllers
 			ViewBag.empRawAtt = empRawAtt;
 			
 			DateTime currentDateTime = _timeService.GetCurrentTimeInIndia();
-			var emp_Attend = _context.empAttendViewModels.FromSqlRaw("EXEC emp_attend @empId = '" + empId + "'").ToList();
+			var emp_Attend = _context.empAttendViewModels.FromSqlRaw("EXEC sp_emp_attend @empId = '" + empId + "'").ToList();
 			TimeSpan todayin = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkin).FirstOrDefault();
 			TimeSpan todayout = emp_Attend.Where(c => c.date == currentDateTime.Date).Select(c => c.Checkout).FirstOrDefault();			
 			int todayintValue = 0;

@@ -1,6 +1,6 @@
+using HRM.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using HRM.Areas.Identity.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
