@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace itgsgroup.Migrations
+namespace HRM.Migrations
 {
     /// <inheritdoc />
     public partial class loanapplymigration : Migration

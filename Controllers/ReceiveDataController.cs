@@ -1,12 +1,12 @@
-﻿using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Hub;
-using itgsgroup.Models.hrms;
+﻿using HRM.Areas.Identity.Data;
+using HRM.Hub;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.CodeAnalysis;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
     [Route("a/[controller]")]
     //[ApiController]

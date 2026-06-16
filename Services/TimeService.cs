@@ -1,8 +1,8 @@
 ﻿// TimeService.cs
 using System;
 using Microsoft.EntityFrameworkCore;
-using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 
 public interface ITimeService
 {

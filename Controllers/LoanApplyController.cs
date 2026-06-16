@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 using AutoMapper.Internal;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
 	[Authorize]
 	public class LoanApplyController : Controller

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace itgsgroup.Models.hrms
+namespace HRM.Models.hrms
 {
     public class roleModel
     {

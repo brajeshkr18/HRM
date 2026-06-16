@@ -1,6 +1,6 @@
-﻿@model List<itgsgroup.Areas.Identity.Data.ApplicationUser>
+﻿@model List<HRM.Areas.Identity.Data.ApplicationUser>
 @using Microsoft.AspNetCore.Identity
-@using itgsgroup.Areas.Identity.Data
+@using HRM.Areas.Identity.Data
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject ApplicationUserManager UserManager
@@ -82,13 +82,13 @@
                     @foreach (var user in Model)
                     {
                         <tr>
-                            <td>
+                           @*  <td>
                                 <h2 class="table-avatar">
                                     <a asp-controller="Employee" asp-action="Profile" asp-route-id="@user.Id" class="avatar"><img src="~/dist/files/@user.profile_pic" alt="User Image"></a>
-                                    <a asp-controller ="Employee" asp-action="Profile" asp-route-id="@user.Id">@user.name - <span> @user.designation.name</span></a>
+                                    <a asp-controller ="Employee" asp-action="Profile" asp-route-id="@user.Id">@user.name - <span> @(user.designation?.name ?? "")</span></a>
                                 </h2>
                             </td>
-                            <td>@user.company.name</td>
+                            <td>@(user.company?.name ?? "")</td>
                             <td>@user.PhoneNumber</td>
                             <td>
                                 @user.joining_date.Value.ToString("dd MMM yyyy")
@@ -125,11 +125,11 @@
                             <td>@user.emp_type</td>
                             <td>@user.salary</td>
                             <td>@user.company.name</td>
-                            <td>@user.depart.name</td>
+                            <td>@(user.depart?.name ?? "")</td>
                             <td>@user.designation.name</td>
-                            <td>@user.shift.from - @user.shift.to</td>
+                            <td>@(user.shift != null ? $"{user.shift.from} - {user.shift.to}" : "")</td>
                             <td>@user.attend_type</td>
-                            <td>@user.machineId</td>
+                            <td>@user.machineId</td> *@
 
                         </tr>
                     }

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using itgsgroup.Areas.Identity.Data;
+using HRM.Areas.Identity.Data;
 
 #nullable disable
 
-namespace itgsgroup.Migrations
+namespace HRM.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20231020115754_PayRollMigration")]
@@ -162,7 +162,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("HRM.Areas.Identity.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -310,7 +310,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.COATModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.COATModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -352,7 +352,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("Correct_AttendTime");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.CompanyHolidayModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.CompanyHolidayModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -377,7 +377,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("companyHolidays");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.CompanyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.CompanyModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -409,7 +409,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("companies");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DeductionCountViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DeductionCountViewModel", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -439,7 +439,7 @@ namespace itgsgroup.Migrations
                     b.ToView("DeductionCountView", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DepartmentModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DepartmentModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -461,7 +461,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("departments");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DesignationModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DesignationModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -483,7 +483,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("designations");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DiciplinaryActionModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DiciplinaryActionModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -514,7 +514,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("diciplinaryActions");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EOBIModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EOBIModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -543,7 +543,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("EOBIs");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpDocModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpDocModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -571,7 +571,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("empDocs");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpFamilyDocModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpFamilyDocModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -599,7 +599,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("empFamilyDocs");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpFamilyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpFamilyModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -641,7 +641,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("empFamily");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.FascalYearModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.FascalYearModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -665,7 +665,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("fascalYears");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.GazettedHolidayModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.GazettedHolidayModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -690,7 +690,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("gazettedHolidays");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveApplyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveApplyModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -740,7 +740,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("leaveApplies");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveCountViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveCountViewModel", b =>
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int");
@@ -787,7 +787,7 @@ namespace itgsgroup.Migrations
                     b.ToView("LeaveCountView", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveTypeModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveTypeModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -817,7 +817,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("leaveTypes");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanApplyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanApplyModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -862,7 +862,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("loanApplies");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanOpeningModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanOpeningModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -887,7 +887,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("loanOpenings");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanViewModel", b =>
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int");
@@ -921,7 +921,7 @@ namespace itgsgroup.Migrations
                     b.ToView("LoanView", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LocationsModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LocationsModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -938,7 +938,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("locations");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.PayRollModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.PayRollModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1035,7 +1035,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("payRolls");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.ReconciliationViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.ReconciliationViewModel", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -1078,7 +1078,7 @@ namespace itgsgroup.Migrations
                     b.ToView("ReconciliationView", (string)null);
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SalaryBreakupModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SalaryBreakupModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1103,7 +1103,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("salaryBreakup");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SandwichAttModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SandwichAttModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1135,7 +1135,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("sandwichAtts");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.ShiftModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.ShiftModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1159,7 +1159,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("shift");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SlabsModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SlabsModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1194,7 +1194,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("slabs");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.rawattendanceModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.rawattendanceModel", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -1220,7 +1220,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("rawattendances");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.tempMonthAttModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.tempMonthAttModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1287,7 +1287,7 @@ namespace itgsgroup.Migrations
                     b.ToTable("tempMonthAtts");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.tempMonthAttViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.tempMonthAttViewModel", b =>
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int");
@@ -1364,7 +1364,7 @@ namespace itgsgroup.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1373,7 +1373,7 @@ namespace itgsgroup.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1388,7 +1388,7 @@ namespace itgsgroup.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1397,28 +1397,28 @@ namespace itgsgroup.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("itgsgroup.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("HRM.Areas.Identity.Data.ApplicationUser", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId");
 
-                    b.HasOne("itgsgroup.Models.hrms.DepartmentModel", "depart")
+                    b.HasOne("HRM.Models.hrms.DepartmentModel", "depart")
                         .WithMany()
                         .HasForeignKey("departId");
 
-                    b.HasOne("itgsgroup.Models.hrms.DesignationModel", "designation")
+                    b.HasOne("HRM.Models.hrms.DesignationModel", "designation")
                         .WithMany()
                         .HasForeignKey("designationId");
 
-                    b.HasOne("itgsgroup.Models.hrms.ShiftModel", "shift")
+                    b.HasOne("HRM.Models.hrms.ShiftModel", "shift")
                         .WithMany()
                         .HasForeignKey("shiftId");
 
@@ -1431,15 +1431,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("shift");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.COATModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.COATModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1450,9 +1450,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.CompanyHolidayModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.CompanyHolidayModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1461,9 +1461,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.CompanyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.CompanyModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.LocationsModel", "Loc")
+                    b.HasOne("HRM.Models.hrms.LocationsModel", "Loc")
                         .WithMany()
                         .HasForeignKey("LocId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1472,9 +1472,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("Loc");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DeductionCountViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DeductionCountViewModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1483,9 +1483,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DepartmentModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DepartmentModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1494,9 +1494,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DesignationModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DesignationModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1505,15 +1505,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.DiciplinaryActionModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.DiciplinaryActionModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1524,15 +1524,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EOBIModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EOBIModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Models.hrms.FascalYearModel", "fy")
+                    b.HasOne("HRM.Models.hrms.FascalYearModel", "fy")
                         .WithMany()
                         .HasForeignKey("fyId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -1543,15 +1543,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("fy");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpDocModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpDocModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany("empDocs")
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1562,15 +1562,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpFamilyDocModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpFamilyDocModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1581,15 +1581,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.EmpFamilyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.EmpFamilyModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1600,9 +1600,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.FascalYearModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.FascalYearModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1611,9 +1611,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.GazettedHolidayModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.GazettedHolidayModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1622,21 +1622,21 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveApplyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveApplyModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Models.hrms.LeaveTypeModel", "leave")
+                    b.HasOne("HRM.Models.hrms.LeaveTypeModel", "leave")
                         .WithMany()
                         .HasForeignKey("leaveId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1649,24 +1649,24 @@ namespace itgsgroup.Migrations
                     b.Navigation("leave");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveCountViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveCountViewModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId");
 
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LeaveTypeModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LeaveTypeModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Models.hrms.FascalYearModel", "fy")
+                    b.HasOne("HRM.Models.hrms.FascalYearModel", "fy")
                         .WithMany()
                         .HasForeignKey("fyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1677,15 +1677,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("fy");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanApplyModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanApplyModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1696,9 +1696,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanOpeningModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanOpeningModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1707,9 +1707,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.LoanViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.LoanViewModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1718,9 +1718,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.ReconciliationViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.ReconciliationViewModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1729,9 +1729,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SalaryBreakupModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SalaryBreakupModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1740,9 +1740,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SandwichAttModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SandwichAttModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1751,9 +1751,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.ShiftModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.ShiftModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1762,15 +1762,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("company");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.SlabsModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.SlabsModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Models.hrms.FascalYearModel", "fy")
+                    b.HasOne("HRM.Models.hrms.FascalYearModel", "fy")
                         .WithMany()
                         .HasForeignKey("fyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1781,9 +1781,9 @@ namespace itgsgroup.Migrations
                     b.Navigation("fy");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.rawattendanceModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.rawattendanceModel", b =>
                 {
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1792,15 +1792,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.tempMonthAttModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.tempMonthAttModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1811,15 +1811,15 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Models.hrms.tempMonthAttViewModel", b =>
+            modelBuilder.Entity("HRM.Models.hrms.tempMonthAttViewModel", b =>
                 {
-                    b.HasOne("itgsgroup.Models.hrms.CompanyModel", "company")
+                    b.HasOne("HRM.Models.hrms.CompanyModel", "company")
                         .WithMany()
                         .HasForeignKey("companyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("itgsgroup.Areas.Identity.Data.ApplicationUser", "emp")
+                    b.HasOne("HRM.Areas.Identity.Data.ApplicationUser", "emp")
                         .WithMany()
                         .HasForeignKey("empId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1830,7 +1830,7 @@ namespace itgsgroup.Migrations
                     b.Navigation("emp");
                 });
 
-            modelBuilder.Entity("itgsgroup.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("HRM.Areas.Identity.Data.ApplicationUser", b =>
                 {
                     b.Navigation("empDocs");
                 });

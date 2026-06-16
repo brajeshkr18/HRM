@@ -1,8 +1,8 @@
-﻿using itgsgroup.Areas.Identity.Data;
+﻿using HRM.Areas.Identity.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
-namespace itgsgroup.Models.hrms
+namespace HRM.Models.hrms
 {
     public class LoanApplyModel
     {

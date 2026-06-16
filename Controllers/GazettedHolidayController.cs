@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Http.HttpResults;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
 	[Authorize]
 	public class GazettedHolidayController : Controller

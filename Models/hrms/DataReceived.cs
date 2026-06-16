@@ -1,4 +1,4 @@
-﻿namespace itgsgroup.Models.hrms
+﻿namespace HRM.Models.hrms
 {
     public class DataReceived
     {

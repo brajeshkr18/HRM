@@ -1,4 +1,4 @@
-namespace itgsgroup.Models
+namespace HRM.Models
 {
     public class ErrorViewModel
     {

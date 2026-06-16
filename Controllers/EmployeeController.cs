@@ -1,13 +1,12 @@
-﻿using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+﻿using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-using System.Reflection.Metadata.Ecma335;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
 	[Authorize]
 	public class EmployeeController : Controller

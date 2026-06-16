@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace itgsgroup.Models.hrms
+namespace HRM.Models.hrms
 {
     public class LeaveTypeModel
     {

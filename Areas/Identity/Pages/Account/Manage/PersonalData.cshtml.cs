@@ -2,13 +2,13 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 using System;
 using System.Threading.Tasks;
-using itgsgroup.Areas.Identity.Data;
+using HRM.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace itgsgroup.Areas.Identity.Pages.Account.Manage
+namespace HRM.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {

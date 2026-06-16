@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
 	[Authorize]
 	public class DepartmentController : Controller
@@ -31,7 +31,8 @@ namespace itgsgroup.Controllers
             var user = await _userManager.GetUserAsync(User);
             ViewData["companyId"] = user.companyId;
             ViewData["id"] = id;
-            var departments = await _context.departments.Include(c => c.company).ToListAsync();
+            var departments = await _context.departments.Include(c => c.company).OrderByDescending(
+                x=>x.companyId).ToListAsync();
             var department = await _context.departments.FindAsync(id);
             var departmentvew = new departmentViewModel
             {

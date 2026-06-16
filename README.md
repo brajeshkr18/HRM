@@ -46,7 +46,7 @@ bash
 Copy
 Edit
 git clone https://github.com/your-username/hrm.git
-Open the solution itgsgroup.sln in Visual Studio 2022 or newer.
+Open the solution HRM.sln in Visual Studio 2022 or newer.
 
 Restore NuGet packages automatically on build.
 

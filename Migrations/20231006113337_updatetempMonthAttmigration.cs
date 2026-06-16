@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace itgsgroup.Migrations
+namespace HRM.Migrations
 {
     /// <inheritdoc />
     public partial class updatetempMonthAttmigration : Migration

@@ -1,4 +1,4 @@
-﻿namespace itgsgroup.Hub
+﻿namespace HRM.Hub
 {
     using Microsoft.AspNetCore.SignalR;
     using System.Threading.Tasks;

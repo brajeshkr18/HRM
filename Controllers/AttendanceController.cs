@@ -1,5 +1,5 @@
-﻿using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+﻿using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,12 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.SignalR;
 using System;
-using itgsgroup.Hub;
+using HRM.Hub;
 using Microsoft.AspNetCore.Authorization;
 using System.Text;
 using System.Data;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
     [Authorize]
     public class AttendanceController : Controller

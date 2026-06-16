@@ -1,5 +1,5 @@
-﻿using itgsgroup.Areas.Identity.Data;
-using itgsgroup.Models.hrms;
+﻿using HRM.Areas.Identity.Data;
+using HRM.Models.hrms;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace itgsgroup.Controllers
+namespace HRM.Controllers
 {
 	[Authorize]
 	public class PayRollController : Controller

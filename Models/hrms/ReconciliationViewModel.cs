@@ -1,6 +1,6 @@
-﻿using itgsgroup.Areas.Identity.Data;
+﻿using HRM.Areas.Identity.Data;
 
-namespace itgsgroup.Models.hrms
+namespace HRM.Models.hrms
 {
     public class ReconciliationViewModel
     {

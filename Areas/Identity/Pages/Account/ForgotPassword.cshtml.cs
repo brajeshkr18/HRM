@@ -8,14 +8,14 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using itgsgroup.Areas.Identity.Data;
+using HRM.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace itgsgroup.Areas.Identity.Pages.Account
+namespace HRM.Areas.Identity.Pages.Account
 {
     [Authorize(Roles = "admin,HR")]
     public class ForgotPasswordModel : PageModel

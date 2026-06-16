@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Security.Policy;
 
-namespace itgsgroup.Models.hrms
+namespace HRM.Models.hrms
 {
     public class SalaryBreakupModel
     {
