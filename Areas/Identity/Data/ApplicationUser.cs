@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using HRM.Models.hrms;
+﻿using HRM.Models.hrms;
 using Microsoft.AspNetCore.Identity;
 
 namespace HRM.Areas.Identity.Data;

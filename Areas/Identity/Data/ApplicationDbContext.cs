@@ -1,9 +1,6 @@
-﻿using HRM.Areas.Identity.Data;
-using HRM.Models.hrms;
-using Microsoft.AspNetCore.Identity;
+﻿using HRM.Models.hrms;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 
 namespace HRM.Areas.Identity.Data;
 

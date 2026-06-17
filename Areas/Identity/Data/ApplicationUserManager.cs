@@ -1,16 +1,13 @@
 ﻿namespace HRM.Areas.Identity.Data
 {
-	using Microsoft.AspNetCore.Identity;
-	using Microsoft.Extensions.Options;
-	using System;
-	using System.Collections.Generic;
-	using System.Security.Claims;
-	using System.Threading.Tasks;
-	using Microsoft.Extensions.Logging;
-	using Microsoft.Extensions.DependencyInjection;
-	using System.Linq;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
-	public class ApplicationUserManager : UserManager<ApplicationUser>
+    public class ApplicationUserManager : UserManager<ApplicationUser>
 	{
 		public ApplicationUserManager(IUserStore<ApplicationUser> store, IOptions<IdentityOptions> optionsAccessor, IPasswordHasher<ApplicationUser> passwordHasher,
 			IEnumerable<IUserValidator<ApplicationUser>> userValidators, IEnumerable<IPasswordValidator<ApplicationUser>> passwordValidators, ILookupNormalizer keyNormalizer,

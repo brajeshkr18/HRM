@@ -1,5 +1,6 @@
 # HRM - Human Resource Management System
-A complete Human Resource Management System developed with ASP.NET Core MVC, designed to simplify and automate HR operations like employee management, leave tracking, and payroll.
+A complete Human Resource Management System developed with ASP.NET Core MVC, designed to simplify and automate HR operations like 
+employee management, leave tracking, and payroll.
 
 # 🛠️ Tech Stack
 ASP.NET Core MVC (.NET 6 / .NET 7)
@@ -45,7 +46,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/hrm.git
+git clone https://github.com/brajeshkr18/HRM.git
 Open the solution HRM.sln in Visual Studio 2022 or newer.
 
 Restore NuGet packages automatically on build.
@@ -75,7 +76,7 @@ Run the project (F5) and enjoy!
 
 # 📄 License
 This project is for portfolio and demonstration purposes only.
-All rights reserved ©️ Awais Ali Qureshi 2025.
+All rights reserved ©️ Brajesh Kumar 2026.
 
 # ✅ Bonus Suggestion
 If you want to make it even more polished, you can add:
